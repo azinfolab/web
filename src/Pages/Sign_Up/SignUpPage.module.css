@@ -1,0 +1,128 @@
+.signUpPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.closeSignUpPageButton {
+    height: 28px;
+    width: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+.closeSignUpPageButton:hover {
+    color: #9155A7;
+    cursor: pointer;
+}
+
+.signUpContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUpContentHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signUpContentHeader > h1{
+    font-size: 48px;
+    margin: 0 0;
+}
+
+.textWithButtonContainer {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.textWithButtonContainer > h4 {
+    margin: 23px 0;
+}
+
+.textWithButtonContainer button {
+    background: transparent;
+    border: none;
+    line-height: 1;
+    height: 21px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #9155A7;
+}
+
+.textWithButtonContainer button:hover {
+    cursor: pointer;
+}
+
+.signUpWithEmailButton {
+    height: 48px;
+    width: 320px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.signUpWithEmailButton:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.signUpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.signUpFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+}
+
+.signUpInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    color: #605e5e;
+}
+
+.signUpInputContainer > input {
+    height: 27px;
+    border: none;
+    border-bottom: 1px solid #9155A7;
+    outline: none;
+    font-size: 16px;
+}
+
+.signUpButton {
+    background-color: #9155A7;
+    height: 48px;
+    width: 320px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.signUpButton:hover {
+    cursor: pointer;
+}

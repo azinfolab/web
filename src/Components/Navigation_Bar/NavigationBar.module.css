@@ -1,0 +1,66 @@
+.navigationContainer {
+    --backgroundColor: white;
+    --height: 355px;
+
+    background-color: var(--backgroundColor);
+    height: var(--height);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksContainer {
+    --width: 800px;
+
+    flex-basis: var(--width);
+
+    display: flex;
+    list-style-type: none;
+}
+
+.links {
+    --width: auto;
+
+    flex-basis: var(--width);
+
+    margin: 50px;
+}
+
+.activeLink {
+    --textColor: #9155A7;
+
+    color: var(--textColor);
+}
+
+a {
+    --textColor: #605e5e;
+
+    color: var(--textColor);
+    text-decoration: none;
+
+    white-space: nowrap;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    --textColor: #9155A7;
+
+    color: var(--textColor);
+
+    text-decoration: none;
+}
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.personIconSVG {
+    margin-right: 10px;
+    font-size: 30px;
+}

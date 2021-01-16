@@ -1,0 +1,13 @@
+import React from "react";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {allLinks} from "../Components/Navigation_Bar/NavigationLinks";
+
+const LinkRouteController = () =>
+    <Router>
+        <Switch>
+            {allLinks.map(link => (
+                <Route exact path={link.endpoint} component={link.page}/>))}
+        </Switch>
+    </Router>
+
+export default LinkRouteController;

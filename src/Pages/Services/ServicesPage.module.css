@@ -1,0 +1,19 @@
+.headerContainer {
+    --backgroundColor: #6DCCA3;
+    --height:135px;
+
+    background-color: var(--backgroundColor);
+    height: var(--height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    --textColor: white;
+    --fontSize: 34px;
+
+    color: var(--textColor);
+    font-size: var(--fontSize);
+}
