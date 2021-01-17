@@ -32,7 +32,7 @@ This README.md contains instructions how to access this project, information abo
 This folder contains all the source code to the project. Contains three main folders: components, controller, and pages.        
   * [Components](https://github.com/azinfolab/web/tree/main/src/Components):        
   This folder contains code for components shared between more than two pages for example the navigation bar, header, and footer.      
-  * [Controller](https://github.com/azinfolab/web/tree/main/src/Controller)         
+  * [Controller](https://github.com/azinfolab/web/tree/main/src/Controller):        
   This folder contains code for managing the logic of the website such as page routing.       
-  * [Pages](https://github.com/azinfolab/web/tree/main/src/Pages)     
+  * [Pages](https://github.com/azinfolab/web/tree/main/src/Pages):     
   This folder contains code for managing each page of the website. Each page in this folder has a folder with a javascript and css file.      
