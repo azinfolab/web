@@ -3,8 +3,10 @@ This README.md contains instructions how to access this project, information abo
 <br>
 
 ## How to get started:       
-Clone this project into a directory of your choosing using this code snippet.       
-```git clone https://github.com/azinfolab/web.git```     
+1. Make sure to have [Node.js](https://nodejs.org/en/download/package-manager/) installed on your computer.
+2. Clone this project into a directory of your choosing using this code snippet.       
+```git clone https://github.com/azinfolab/web.git```
+3. To run the application first cd into the folder containing the project and then run ```npm run start``` in the command line.      
 <br>
 
 ## Helpful git tips:
