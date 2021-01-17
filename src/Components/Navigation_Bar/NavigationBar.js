@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom';
 
 import {IoPersonCircleSharp} from 'react-icons/io5'
 
-import * as NavigationLinks from "./NavigationLinks";
+import * as NavigationLinks from "../../Controller/Links";
 import NavigationBarStyle from "./NavigationBar.module.css";
 import Logo from "./images/logo_sharp.png";
 

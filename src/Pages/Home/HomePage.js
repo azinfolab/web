@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import MainHeaderForPage from "../../Components/Header/Header";
 import MainNavigationBar from "../../Components/Navigation_Bar/NavigationBar";
 import Footer from "../../Components/Footer/Footer";
-import {mainPageLinks, serviceDropDownMenuPageLinks} from "../../Components/Navigation_Bar/NavigationLinks";
+import {mainPageLinks, serviceDropDownMenuPageLinks} from "../../Controller/Links";
 
 import HomeStyles from "./HomePage.module.css";
 import images from "./ImagesForCarousel";

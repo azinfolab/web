@@ -1,20 +1,20 @@
 /*
  *
  */
-import HomePage from "../../Pages/Home/HomePage";
-import AboutUsPage from "../../Pages/About_Us/AboutUsPage";
-import ContactPage from "../../Pages/Contact/ContactPage";
-import LoginPage from "../../Pages/Login/LoginPage";
+import HomePage from "../Pages/Home/HomePage";
+import AboutUsPage from "../Pages/About_Us/AboutUsPage";
+import ContactPage from "../Pages/Contact/ContactPage";
+import LoginPage from "../Pages/Login/LoginPage";
 
 /*
  *
  */
-import DigitalPathologySolutionsPage from "../../Pages/Services/DigitalPathologySolutionsPage";
-import DiagnosticCardiologySolutionsPage from "../../Pages/Services/DiagnosticCardiologySolutionsPage";
-import DiagnosticRadiologySolutionsPage from "../../Pages/Services/DiagnosticRadiologySolutionsPage";
-import Services from "../../Pages/Services/Services";
+import DigitalPathologySolutionsPage from "../Pages/Services/DigitalPathologySolutionsPage";
+import DiagnosticCardiologySolutionsPage from "../Pages/Services/DiagnosticCardiologySolutionsPage";
+import DiagnosticRadiologySolutionsPage from "../Pages/Services/DiagnosticRadiologySolutionsPage";
+import Services from "../Pages/Services/Services";
 
-import SignUpPage from "../../Pages/Sign_Up/SignUpPage";
+import SignUpPage from "../Pages/Sign_Up/SignUpPage";
 
 /*
  *

@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import {Link} from "react-router-dom";
-import {mainPageLinks, signUpPageLink} from "../../Components/Navigation_Bar/NavigationLinks";
+import {mainPageLinks, signUpPageLink} from "../../Controller/Links";
 import LoginStyles from "./LoginPage.module.css"
 
 class LoginPage extends Component {

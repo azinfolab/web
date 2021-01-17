@@ -1,5 +1,5 @@
 import React, {Component, useState} from "react";
-import {mainPageLinks} from "../../Components/Navigation_Bar/NavigationLinks";
+import {mainPageLinks} from "../../Controller/Links";
 import {Link} from "react-router-dom";
 import SignUpStyles from "./SignUpPage.module.css"
 

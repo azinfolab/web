@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import {allLinks} from "../Components/Navigation_Bar/NavigationLinks";
+import {allLinks} from "./Links";
 
 const LinkRouteController = () =>
     <Router>
