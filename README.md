@@ -1,4 +1,4 @@
-# A to Z Informatic Labs Docs         
+# A to Z Informatic Labs Project         
 This README.md contains instructions how to access this project, information about this project, and helpful links.     
 <br>
 
@@ -35,5 +35,4 @@ This folder contains all the source code to the project. Contains three main fol
   * [Controller](https://github.com/azinfolab/web/tree/main/src/Controller)         
   This folder contains code for managing the logic of the website such as page routing.       
   * [Pages](https://github.com/azinfolab/web/tree/main/src/Pages)     
-  This folder contains code for managing each page of the website. Each page in this folder has a folder with a javascript and css file.
-
+  This folder contains code for managing each page of the website. Each page in this folder has a folder with a javascript and css file.      
