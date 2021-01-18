@@ -16,7 +16,15 @@ This README.md contains instructions how to access this project, information abo
       2. ```git commit -m "Some meaningful message for the work you done"```        
       3. ``` git push```       
 * Push frequently so everyone in the company has the latest project updates!        
+<br>     
+
+## Git branch information:
+* [git branch](https://www.atlassian.com/git/tutorials/using-branches)
+* [git checkout](https://www.atlassian.com/git/tutorials/using-branches/git-checkout)
+* [git merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
+* [merge conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)         
 <br>
+
            
 ## Project Structure:   
 ### Technologies used:
