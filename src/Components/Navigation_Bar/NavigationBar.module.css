@@ -1,6 +1,6 @@
 .navigationContainer {
     --backgroundColor: white;
-    --height: 355px;
+    --height: 150px;
 
     background-color: var(--backgroundColor);
     height: var(--height);
@@ -11,34 +11,26 @@
 }
 
 .linksContainer {
-    --width: 800px;
-
-    flex-basis: var(--width);
-
     display: flex;
+    justify-content: center;
     list-style-type: none;
+    padding-left: 30px;
 }
 
-.links {
-    --width: auto;
 
-    flex-basis: var(--width);
-
-    margin: 50px;
-}
-
-.activeLink {
+.linksContainer .activeLink {
     --textColor: #9155A7;
 
     color: var(--textColor);
 }
 
-a {
+.linksContainer  a {
     --textColor: #605e5e;
 
     color: var(--textColor);
     text-decoration: none;
 
+    margin: 30px;
     white-space: nowrap;
     height: 30px;
     display: flex;
@@ -46,11 +38,8 @@ a {
     align-items: center;
 }
 
-a:hover {
-    --textColor: #9155A7;
-
-    color: var(--textColor);
-
+.linksContainer a:hover {
+    color: #9155A7;
     text-decoration: none;
 }
 

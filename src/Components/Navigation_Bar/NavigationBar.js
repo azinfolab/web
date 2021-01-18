@@ -8,7 +8,7 @@ import Logo from "./images/logo_sharp.png";
 
 const MainNavigationBar = () =>
     <div className={NavigationBarStyle.navigationContainer}>
-        <img src={Logo} alt="Logo" height="200px" width="400px"/>
+        <img src={Logo} alt="Logo" height="129px" width="257px"/>
         <nav>
             <ul className={NavigationBarStyle.linksContainer}>
                 {NavigationLinks.mainPageLinks.map(link => (NavigationItem(link)))}
@@ -17,7 +17,7 @@ const MainNavigationBar = () =>
     </div>
 
 const NavigationItem = (linkObject) =>
-    <li className={NavigationBarStyle.links} id={linkObject.name}>
+    <li key={linkObject.name} id={linkObject.name}>
         <NavLink exact activeClassName={NavigationBarStyle.activeLink}
                  to={linkObject.endpoint}>{"LOGIN" !== linkObject.name ? linkObject.name :
             <div className={NavigationBarStyle.loginContainer}><IoPersonCircleSharp

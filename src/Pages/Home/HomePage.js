@@ -31,16 +31,19 @@ class HomePage extends Component {
 
 const CarouselView = () => {
     const solutions = [{
+        keyID: 1,
         header: "Digital Pathology Solutions",
         content: "I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
         link: serviceDropDownMenuPageLinks[0].endpoint,
         backgroundColor: "#097747E6"
     }, {
+        keyID: 2,
         header: "Diagnostic Radiology Solutions",
         content: "I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
         link: serviceDropDownMenuPageLinks[2].endpoint,
         backgroundColor: "#0DB26BE6"
     }, {
+        keyID: 3,
         header: "Diagnostic Cardiology Solutions",
         content: "I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
         link: serviceDropDownMenuPageLinks[1].endpoint,
@@ -135,7 +138,7 @@ class ImageCarousel extends Component {
                         onClick={this.previousImage}><IoIosArrowBack className={HomeStyles.arrowSVG}/></button>
                 <button className={HomeStyles.nextArrow} disabled={this.state.buttonsDisabled}
                         onClick={this.nextImage}><IoIosArrowForward className={HomeStyles.arrowSVG}/></button>
-                {this.state.shouldUpdate ? <img key={Math.random()} className={this.state.activeSlideCSS}
+                {this.state.shouldUpdate ? <img className={this.state.activeSlideCSS}
                                                 onAnimationEnd={animationFuncHelper}
                                                 src={slideImage.image}
                                                 alt={slideImage.alt}/> : null}
@@ -146,7 +149,8 @@ class ImageCarousel extends Component {
 }
 
 const SolutionInfoBox = (solution) =>
-    <div className={HomeStyles.solutionsInfoContainer} style={{"backgroundColor": solution.backgroundColor}}>
+    <div key={solution.keyID} className={HomeStyles.solutionsInfoContainer}
+         style={{"backgroundColor": solution.backgroundColor}}>
         <h2>{solution.header}</h2>
         <p>{solution.content}</p>
         <Link to={solution.link}>
@@ -164,17 +168,20 @@ const ContactDivider = () =>
 
 const DigitalImagingSolutionsView = () => {
     const solutions = [{
+        keyID: 1,
         icon: FaRegComments,
         header: "Collaborations",
         content: "I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
         link: mainPageLinks[0].endpoint,
     }, {
+        keyID: 2,
         icon: IoPersonOutline,
         header: "Customers",
         content: "I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
         link: mainPageLinks[1].endpoint,
 
     }, {
+        keyID: 3,
         icon: RiStethoscopeLine,
         header: "AI Diagnostics",
         content: "I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.",
@@ -192,7 +199,7 @@ const DigitalImagingSolutionsView = () => {
 }
 
 const DigitalImagingSolutionsBox = (solution) =>
-    <div className={HomeStyles.digitalImagingSolutionsBoxContainer}>
+    <div key={solution.keyID} className={HomeStyles.digitalImagingSolutionsBoxContainer}>
         <div className={HomeStyles.digitalImagingSolutionsIconSVGBackground}>
             <solution.icon className={HomeStyles.digitalImagingSolutionsIconSVG}/>
         </div>
@@ -215,7 +222,8 @@ const SignUpNewsLetterView = () => {
     return (
         <div className={HomeStyles.signUpNewsLetterViewContainer}>
             <h2>Sign up for our newsletter</h2>
-            <p>Enter your email below to stay updated with the lastest news and solutions from A to Z Informatics Lab.</p>
+            <p>Enter your email below to stay updated with the lastest news and solutions from A to Z Informatics
+                Lab.</p>
             <div className={HomeStyles.signUpNewsLetterFormContainer}>
                 <form id="signUpNewsLetterForm">
                     <input type="text" placeholder="Enter your email here.*"

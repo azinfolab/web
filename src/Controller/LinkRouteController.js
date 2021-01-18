@@ -6,7 +6,7 @@ const LinkRouteController = () =>
     <Router>
         <Switch>
             {allLinks.map(link => (
-                <Route exact path={link.endpoint} component={link.page}/>))}
+                <Route key={link.endpoint} exact path={link.endpoint} component={link.page}/>))}
         </Switch>
     </Router>
 
