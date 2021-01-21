@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import MainHeaderForPage from "../../Components/Header/Header";
 import MainNavigationBar from "../../Components/Navigation_Bar/NavigationBar";
 import Footer from "../../Components/Footer/Footer";
+import {LinkButton} from "../../Components/Buttons";
 import {mainPageLinks, serviceDropDownMenuPageLinks} from "../../Controller/Links";
 
 import HomeStyles from "./HomePage.module.css";
@@ -153,9 +153,7 @@ const SolutionInfoBox = (solution) =>
          style={{"backgroundColor": solution.backgroundColor}}>
         <h2>{solution.header}</h2>
         <p>{solution.content}</p>
-        <Link to={solution.link}>
-            <button>See More</button>
-        </Link>
+        {LinkButton(solution.link, "See More")}
     </div>
 
 
@@ -205,13 +203,7 @@ const DigitalImagingSolutionsBox = (solution) =>
         </div>
         <h3>{solution.header}</h3>
         <p>{solution.content}</p>
-        {solution.link === "/" ?
-            <Link to={"/#"}>
-                <button onClick={() => window.scrollTo({top: 0, left: 0, behavior: "smooth"})}>> See More</button>
-            </Link> :
-            <Link to={solution.link}>
-                <button>> See More</button>
-            </Link>}
+        {LinkButton(solution.link, "> See More")}
     </div>
 
 const SignUpNewsLetterView = () => {
