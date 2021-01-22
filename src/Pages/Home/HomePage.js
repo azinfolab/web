@@ -13,6 +13,8 @@ import {FaRegComments} from 'react-icons/fa'
 import {IoPersonOutline} from 'react-icons/io5'
 import {RiStethoscopeLine} from 'react-icons/ri'
 
+const scrollUpThePageLink = "/";
+
 class HomePage extends Component {
     render() {
         return (
@@ -153,7 +155,7 @@ const SolutionInfoBox = (solution) =>
          style={{"backgroundColor": solution.backgroundColor}}>
         <h2>{solution.header}</h2>
         <p>{solution.content}</p>
-        {LinkButton(solution.link, "See More")}
+        <LinkButton scrollUpThePageLink={scrollUpThePageLink} link={solution.link} text={"See More"}/>
     </div>
 
 
@@ -203,7 +205,7 @@ const DigitalImagingSolutionsBox = (solution) =>
         </div>
         <h3>{solution.header}</h3>
         <p>{solution.content}</p>
-        {LinkButton(solution.link, "> See More")}
+        <LinkButton scrollUpThePageLink={scrollUpThePageLink} link={solution.link} text={"> See More"}/>
     </div>
 
 const SignUpNewsLetterView = () => {

@@ -2,6 +2,7 @@ import React, {Component, useState} from "react";
 import {mainPageLinks} from "../../Controller/Links";
 import {Link} from "react-router-dom";
 import SignUpStyles from "./SignUpPage.module.css"
+import {LinkButton} from "../../Components/Buttons";
 
 class SignUpPage extends Component {
     render() {
@@ -16,9 +17,7 @@ const SignUp = () => {
 
     return (
         <div className={SignUpStyles.signUpPageContainer}>
-            <Link to={mainPageLinks[0].endpoint}>
-                <button className={SignUpStyles.closeSignUpPageButton}>X</button>
-            </Link>
+            <LinkButton style={SignUpStyles.closeSignUpPageButton} link={mainPageLinks[0].endpoint} text={"X"}/>
             <div className={SignUpStyles.signUpContentContainer}>
                 <div className={SignUpStyles.signUpContentHeader}>
                     <h1>Sign Up</h1>

@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import {Link} from "react-router-dom";
 import {mainPageLinks, signUpPageLink} from "../../Controller/Links";
 import LoginStyles from "./LoginPage.module.css"
+import {LinkButton} from "../../Components/Buttons";
 
 class LoginPage extends Component {
     render() {
@@ -16,9 +17,7 @@ const Login = () => {
 
     return (
         <div className={LoginStyles.loginPageContainer}>
-            <Link to={mainPageLinks[0].endpoint}>
-                <button className={LoginStyles.closeLoginPageButton}>X</button>
-            </Link>
+            <LinkButton style={LoginStyles.closeLoginPageButton} link={mainPageLinks[0].endpoint} text={"X"}/>
             <div className={LoginStyles.loginContentContainer}>
                 <div className={LoginStyles.loginContentHeader}>
                     <h1>Login</h1>
