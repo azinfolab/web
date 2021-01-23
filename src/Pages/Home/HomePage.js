@@ -216,7 +216,7 @@ const SignUpNewsLetterView = () => {
     return (
         <div className={HomeStyles.signUpNewsLetterViewContainer}>
             <h2>Sign up for our newsletter</h2>
-            <p>Enter your email below to stay updated with the lastest news and solutions from A to Z Informatics
+            <p>Enter your email below to stay updated with the latest news and solutions from A to Z Informatics
                 Lab.</p>
             <div className={HomeStyles.signUpNewsLetterFormContainer}>
                 <form id="signUpNewsLetterForm">
