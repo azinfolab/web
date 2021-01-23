@@ -5,9 +5,7 @@ import LinkRouteController from "../Controller/LinkRouteController";
 
 function App() {
     return (
-        <>
         <LinkRouteController/>
-        </>
     );
 }
 

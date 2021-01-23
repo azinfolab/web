@@ -99,6 +99,7 @@
 .signUpInputContainer > input {
     height: 27px;
     border: none;
+    outline: none;
     border-bottom: 1px solid #9155A7;
     font-size: 16px;
 }
