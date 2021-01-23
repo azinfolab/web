@@ -38,6 +38,14 @@ const Login = () => {
 
 
 const LoginForm = () => {
+    const loginHandler = () => {
+
+    }
+
+    const forgotPasswordHandler = () => {
+
+    }
+
     return (
         <div className={LoginStyles.loginContainer}>
             <form className={LoginStyles.loginFormContainer}>
@@ -50,8 +58,8 @@ const LoginForm = () => {
                     <input type="password"/>
                 </div>
             </form>
-            <button className={LoginStyles.forgotPasswordButton}>Forgot password?</button>
-            <button className={LoginStyles.loginButton}>Log In</button>
+            <button onClick={forgotPasswordHandler} className={LoginStyles.forgotPasswordButton}>Forgot password?</button>
+            <button onClick={loginHandler} className={LoginStyles.loginButton}>Log In</button>
         </div>
     );
 }

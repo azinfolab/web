@@ -37,6 +37,10 @@ const SignUp = () => {
 }
 
 const SignUpForm = () => {
+    const signUpHandler = () => {
+
+    }
+
     return (
         <div className={SignUpStyles.signUpContainer}>
             <form className={SignUpStyles.signUpFormContainer}>
@@ -49,7 +53,7 @@ const SignUpForm = () => {
                     <input type="password"/>
                 </div>
             </form>
-            <button className={SignUpStyles.signUpButton}>Sign Up</button>
+            <button onClick={signUpHandler} className={SignUpStyles.signUpButton}>Sign Up</button>
         </div>
     );
 }
