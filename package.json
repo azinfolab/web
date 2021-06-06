@@ -1,0 +1,63 @@
+{
+  "name": "resort",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^4.6.0",
+    "contentful": "^8.2.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express-session": "^1.17.1",
+    "mime": "^1.6.0",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "openseadragon": "^2.4.2",
+    "openseadragon-react-viewer": "^2.2.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-datepicker": "^3.7.0",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-multiselect-dropdown-bootstrap": "^1.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.0",
+    "styled-components": "^5.2.3",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
